@@ -18,6 +18,8 @@ speed, though we're likely to use belt instead of thread-screw for the Z.
 Baseplate notes
 ===============
 
+Width 480, Depth 405, thickness 4.8mm
+
 M4 holes, 25mm grid.
 
 Main mounting holes 100mm apart, central hole is at 175mm, 200mm.
