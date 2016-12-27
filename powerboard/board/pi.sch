@@ -1,0 +1,343 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:stm32
+LIBS:sundance-power
+LIBS:dr-mechanical
+LIBS:powerboard-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Hole H1
+U 1 1 5862BECA
+P 3000 5700
+F 0 "H1" H 3140 5753 60  0000 L CNN
+F 1 "Hole" H 3140 5647 60  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_2.7mm_M2.5" H 3000 5700 60  0001 C CNN
+F 3 "" H 3000 5700 60  0000 C CNN
+	1    3000 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Hole H3
+U 1 1 5862BEFB
+P 3550 5700
+F 0 "H3" H 3690 5753 60  0000 L CNN
+F 1 "Hole" H 3690 5647 60  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_2.7mm_M2.5" H 3550 5700 60  0001 C CNN
+F 3 "" H 3550 5700 60  0000 C CNN
+	1    3550 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Hole H4
+U 1 1 5862BF25
+P 3550 6000
+F 0 "H4" H 3690 6053 60  0000 L CNN
+F 1 "Hole" H 3690 5947 60  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_2.7mm_M2.5" H 3550 6000 60  0001 C CNN
+F 3 "" H 3550 6000 60  0000 C CNN
+	1    3550 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Hole H2
+U 1 1 5862BF46
+P 3000 6000
+F 0 "H2" H 3140 6053 60  0000 L CNN
+F 1 "Hole" H 3140 5947 60  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_2.7mm_M2.5" H 3000 6000 60  0001 C CNN
+F 3 "" H 3000 6000 60  0000 C CNN
+	1    3000 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_02X20 P6
+U 1 1 5862C394
+P 3250 2900
+F 0 "P6" H 3250 4065 50  0000 C CNN
+F 1 "CONN_02X20" H 3250 3974 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x20" H 3250 3973 50  0001 C CNN
+F 3 "" H 3250 1950 50  0000 C CNN
+	1    3250 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 2350 2900 2350
+Wire Wire Line
+	2900 2350 2900 3950
+Wire Wire Line
+	3000 3850 2900 3850
+Connection ~ 2900 3850
+Wire Wire Line
+	3000 3150 2900 3150
+Connection ~ 2900 3150
+Wire Wire Line
+	3500 2150 3600 2150
+Wire Wire Line
+	3600 2150 3600 3950
+Wire Wire Line
+	3500 2550 3600 2550
+Connection ~ 3600 2550
+Wire Wire Line
+	3500 2850 3600 2850
+Connection ~ 3600 2850
+Wire Wire Line
+	3500 3350 3600 3350
+Connection ~ 3600 3350
+Wire Wire Line
+	3500 3550 3600 3550
+Connection ~ 3600 3550
+Wire Wire Line
+	3600 3950 2900 3950
+Wire Wire Line
+	3250 4000 3250 3950
+Connection ~ 3250 3950
+$Comp
+L GND #PWR022
+U 1 1 5862C94B
+P 3250 4000
+F 0 "#PWR022" H 3250 3750 50  0001 C CNN
+F 1 "GND" H 3255 3827 50  0000 C CNN
+F 2 "" H 3250 4000 50  0000 C CNN
+F 3 "" H 3250 4000 50  0000 C CNN
+	1    3250 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 2050 3500 2050
+Wire Wire Line
+	3700 1900 3700 2050
+Wire Wire Line
+	3500 1950 3700 1950
+Connection ~ 3700 1950
+$Comp
+L +5V_PI #PWR023
+U 1 1 5862CD40
+P 3700 1900
+F 0 "#PWR023" H 3700 1750 50  0001 C CNN
+F 1 "+5V_PI" H 3715 2073 50  0000 C CNN
+F 2 "" H 3700 1900 50  0000 C CNN
+F 3 "" H 3700 1900 50  0000 C CNN
+	1    3700 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 2150 2500 2150
+Wire Wire Line
+	3000 2050 2500 2050
+Text HLabel 2500 2050 0    60   BiDi ~ 0
+PI_SDA
+Text HLabel 2500 2150 0    60   BiDi ~ 0
+PI_SCL
+Wire Wire Line
+	3000 2450 2500 2450
+Text HLabel 2500 2450 0    60   Input ~ 0
+PI_ATTN
+NoConn ~ 3000 1950
+NoConn ~ 3000 2250
+NoConn ~ 3000 2550
+NoConn ~ 3000 2650
+NoConn ~ 3000 2750
+NoConn ~ 3000 2850
+NoConn ~ 3000 2950
+NoConn ~ 3000 3050
+NoConn ~ 3000 3250
+NoConn ~ 3000 3350
+NoConn ~ 3000 3450
+NoConn ~ 3000 3550
+NoConn ~ 3000 3650
+NoConn ~ 3000 3750
+NoConn ~ 3500 3850
+NoConn ~ 3500 3750
+NoConn ~ 3500 3600
+NoConn ~ 3500 3450
+NoConn ~ 3500 3250
+NoConn ~ 3500 3150
+NoConn ~ 3500 3050
+NoConn ~ 3500 2950
+NoConn ~ 3500 2750
+NoConn ~ 3500 2650
+NoConn ~ 3500 2450
+NoConn ~ 3500 2350
+NoConn ~ 3500 2250
+$Comp
+L Q_NMOS_GSD Q7
+U 1 1 5863E896
+P 6450 2700
+F 0 "Q7" H 6641 2746 50  0000 L CNN
+F 1 "Q_NMOS_GSD" H 6641 2655 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 6650 2800 50  0001 C CNN
+F 3 "" H 6450 2700 50  0000 C CNN
+	1    6450 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Q_PMOS_GSD Q8
+U 1 1 5863E90A
+P 6550 2100
+F 0 "Q8" V 6878 2100 50  0000 C CNN
+F 1 "Q_PMOS_GSD" V 6787 2100 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 6750 2200 50  0001 C CNN
+F 3 "" H 6550 2100 50  0000 C CNN
+	1    6550 2100
+	0    1    -1   0   
+$EndComp
+$Comp
+L R R11
+U 1 1 5863EDED
+P 5550 1800
+F 0 "R11" H 5620 1846 50  0000 L CNN
+F 1 "0R" H 5620 1755 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 5480 1800 50  0001 C CNN
+F 3 "" H 5550 1800 50  0000 C CNN
+	1    5550 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R12
+U 1 1 5863F053
+P 5800 1800
+F 0 "R12" H 5870 1846 50  0000 L CNN
+F 1 "0R" H 5870 1755 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 5730 1800 50  0001 C CNN
+F 3 "" H 5800 1800 50  0000 C CNN
+	1    5800 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R13
+U 1 1 5863F088
+P 6200 2200
+F 0 "R13" H 6270 2246 50  0000 L CNN
+F 1 "R" H 6270 2155 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 6130 2200 50  0001 C CNN
+F 3 "" H 6200 2200 50  0000 C CNN
+	1    6200 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 1950 5800 2000
+Wire Wire Line
+	5550 2000 6350 2000
+Wire Wire Line
+	5550 2000 5550 1950
+Connection ~ 5800 2000
+Wire Wire Line
+	5550 1650 5550 1600
+Wire Wire Line
+	5800 1650 5800 1600
+$Comp
+L +5V #PWR024
+U 1 1 5863FA06
+P 5800 1600
+F 0 "#PWR024" H 5800 1450 50  0001 C CNN
+F 1 "+5V" H 5815 1773 50  0000 C CNN
+F 2 "" H 5800 1600 50  0000 C CNN
+F 3 "" H 5800 1600 50  0000 C CNN
+	1    5800 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V_SBY #PWR025
+U 1 1 5863FA2E
+P 5550 1600
+F 0 "#PWR025" H 5550 1450 50  0001 C CNN
+F 1 "+5V_SBY" H 5565 1773 50  0000 C CNN
+F 2 "" H 5550 1600 50  0000 C CNN
+F 3 "" H 5550 1600 50  0000 C CNN
+	1    5550 1600
+	1    0    0    -1  
+$EndComp
+Text Notes 5100 1950 0    60   ~ 0
+Fit only\none of\nthese
+Wire Wire Line
+	6200 2050 6200 2000
+Connection ~ 6200 2000
+Wire Wire Line
+	6550 2300 6550 2500
+Wire Wire Line
+	6200 2350 6550 2350
+Connection ~ 6550 2350
+Wire Wire Line
+	6550 2900 6550 2950
+Wire Wire Line
+	6250 2700 5950 2700
+$Comp
+L GND #PWR026
+U 1 1 5864013B
+P 6550 2950
+F 0 "#PWR026" H 6550 2700 50  0001 C CNN
+F 1 "GND" H 6555 2777 50  0000 C CNN
+F 2 "" H 6550 2950 50  0000 C CNN
+F 3 "" H 6550 2950 50  0000 C CNN
+	1    6550 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 2000 7050 2000
+Wire Wire Line
+	7050 2000 7050 1950
+$Comp
+L +5V_PI #PWR027
+U 1 1 586402D8
+P 7050 1950
+F 0 "#PWR027" H 7050 1800 50  0001 C CNN
+F 1 "+5V_PI" H 7065 2123 50  0000 C CNN
+F 2 "" H 7050 1950 50  0000 C CNN
+F 3 "" H 7050 1950 50  0000 C CNN
+	1    7050 1950
+	1    0    0    -1  
+$EndComp
+Text HLabel 5950 2700 0    60   Input ~ 0
+PI_PWR_EN
+Text Label 6250 2000 2    60   ~ 0
+5V_PI_IN
+Text Label 6550 2450 0    60   ~ 0
+5V_PI_EN_f
+Wire Notes Line
+	6700 2100 7350 2100
+Wire Notes Line
+	7350 2100 7350 2200
+Text Notes 7400 2250 0    60   ~ 0
+Note, this is the only P-FET on the board\nBe Careful
+$EndSCHEMATC

@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name sundance)(type KiCad)(uri ../library/sundance.pretty)(options "")(descr ""))
+)
